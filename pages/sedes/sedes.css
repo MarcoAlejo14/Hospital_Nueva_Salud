@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    background-color: #0d3c75;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;    
+    width: 350px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.imagen-sede {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card .ubicacion,
+.card .horario,
+.card .telefono {
+    margin: 5px 0;
+    color: #555;
+}
+
+.sede-central {
+    border-top: 10px solid #007bff;
+}
+
+.sede-norte {
+    border-top: 10px solid #28a745;
+}
+
+.sede-sur {
+    border-top: 10px solid #dc3545;
+}
+
+.sede-este {
+    border-top: 10px solid #ffc107;
+}
+
+header nav ul a {
+    color: rgb(4, 36, 177);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out; 
+}
