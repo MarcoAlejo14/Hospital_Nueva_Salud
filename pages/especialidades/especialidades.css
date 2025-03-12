@@ -62,14 +62,6 @@ button:hover {
     background-color: #00a2ff;
 }
 
-.header {
-    background-color: #0d3c75;
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-}
 
 header nav ul a {
     color: rgb(4, 36, 177);
