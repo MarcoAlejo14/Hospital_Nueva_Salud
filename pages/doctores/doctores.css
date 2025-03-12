@@ -3,21 +3,27 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
+    gap: 20px;
 }
 
 .doctor {
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 15px;
     padding: 20px;
-    width: 250px;
+    width: 280px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #3286e0;
+}
+
+.doctor:hover {
+    transform: scale(1.05);
 }
 
 .doctor img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
@@ -25,11 +31,11 @@ main {
 
 .doctor h2 {
     color: #333;
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin: 10px 0;
 }
 
 .doctor p {
     color: #666;
-    font-size: 0.9em;
+    font-size: 1em;
 }
