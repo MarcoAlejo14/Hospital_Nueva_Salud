@@ -15,7 +15,8 @@
     transition: all 0.3s ease-in-out;
 }
 .card .titulo-card {
-    color: #00a2ff;
+    color: #333;
+    font-size: 1.3em;
 }
 
 .image-container {
@@ -63,12 +64,5 @@ button:hover {
 }
 
 
-header nav ul a {
-    color: rgb(4, 36, 177);
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-}
 
 

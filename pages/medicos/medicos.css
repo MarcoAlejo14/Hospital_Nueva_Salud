@@ -29,7 +29,7 @@ main {
     margin-bottom: 10px;
 }
 
-.doctor h2 {
+.doctor .nombre-dr {
     color: #333;
     font-size: 1.3em;
     margin: 10px 0;

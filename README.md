@@ -8,7 +8,7 @@ Hospital_Nueva_Salud es un proyecto desarrollado como parte del curso de Desarro
 
 - **Sedes**: Ubicación, horarios de atención y teléfonos de contacto.
 - **Médicos**: Información sobre los profesionales de la salud.
-- **Servicios**: Descripción de los servicios médicos ofrecidos por el hospital.
+- **Especialidades**: Descripción de los especialidades médicas ofrecidos por el hospital.
 
 ## Integrantes
 
