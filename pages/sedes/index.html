@@ -25,37 +25,57 @@
     <div class="header">Sedes del Hospital</div>
     <main>
         <div class="main-container">
-            <div class="container">
-                <div class="card sede-central">
-                    <img src="/assets/images/sede1.jpeg" alt="Sede Central" class="imagen-sede">
-                    <h3 class="titulo">Sede Central</h3>
-                    <p class="ubicacion">Ubicación: Av. Principal 123</p>
-                    <p class="horario">Horario: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
-                    <p class="telefono">Teléfono: (01) 1234-5678</p>
-                </div>
-                <div class="card sede-norte">
-                    <img src="/assets/images/sede2.jpeg" alt="Sede Norte" class="imagen-sede">
-                    <h3 class="titulo">Sede Norte</h3>
-                    <p class="ubicacion">Ubicación: Calle Norte 456</p>
-                    <p class="horario">Horario: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
-                    <p class="telefono">Teléfono: (01) 2345-6789</p>
-                </div>
-                <div class="card sede-sur">
-                    <img src="/assets/images/sede3.jpeg" alt="Sede Sur" class="imagen-sede">
-                    <h3 class="titulo">Sede Sur</h3>
-                    <p class="ubicacion">Ubicación: Av. Sur 789</p>
-                    <p class="horario">Horario: Lunes a Sábado, 7:00 AM - 4:00 PM</p>
-                    <p class="telefono">Teléfono: (01) 3456-7890</p>
-                </div>
-                <div class="card sede-este">
-                    <img src="/assets/images/sede4.jpeg" alt="Sede Este" class="imagen-sede">
-                    <h3 class="titulo">Sede Este</h3>
-                    <p class="ubicacion">Ubicación: Calle Este 321</p>
-                    <p class="horario">Horario: Lunes a Viernes, 8:00 AM - 3:00 PM</p>
-                    <p class="telefono">Teléfono: (01) 4567-8901</p>
-                </div>
+            <div id="id-sedes-container" class="sedes-container">
             </div>
         </div>
     </main>
 </body>
+<script>
+    const sedesContainer = document.getElementById('id-sedes-container');
+    console.log(sedesContainer);
+
+    async function cargarSedes(){
+        console.log('He iniciado con el proceso de la funcion cargarSedes')
+        const result = await fetch('http://localhost:3000/sedes');
+        const data = await result.json();
+        console.log('data::',data);
+
+        for (let i = 0; i < data.length; i++) {
+            const sede = data[i];
+
+            const sedeCard = document.createElement('div');
+            //sedeCard.setAttribute('href','app/productos')
+            sedeCard.setAttribute('class','card');
+
+            const img = document.createElement('img');
+            img.setAttribute('class','imagen-sede');
+            img.setAttribute('src',sede.urlImagen);
+            img.setAttribute('alt',sede.nombre);
+
+            const titulo= document.createElement('h3');
+            titulo.setAttribute('class','titulo');
+            titulo.textContent = sede.nombre;
+            
+            const ubicacion= document.createElement('p');
+            ubicacion.setAttribute('class','ubicacion');
+            ubicacion.textContent = 'Ubicación: '+sede.ubicacion;
+
+            const horario= document.createElement('p');
+            horario.setAttribute('class','horario');
+            horario.textContent = 'Horario: '+sede.horario;
+            
+            const telefono= document.createElement('p');
+            telefono.setAttribute('class','telefono');
+            telefono.textContent = 'Teléfono: '+sede.telefono;
+            
+            sedeCard.appendChild(img);
+            sedeCard.appendChild(titulo);
+            sedeCard.appendChild(ubicacion);
+            sedeCard.appendChild(horario);
+            sedeCard.appendChild(telefono);
+
+            sedesContainer.appendChild(sedeCard);
+        }
+    }
+    cargarSedes();</script>
 </html>
