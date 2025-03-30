@@ -1,0 +1,49 @@
+{
+    "especialidades": [
+        {
+            "id": 1,
+            "nombre": "Oncología",
+            "urlImagen": ""
+        }
+    ],
+    "medicos": [
+        {
+            "id": 1,
+            "nombre":""
+        }
+    ],
+    "sedes":[
+        {
+            "id":1,
+            "nombre":"Sede Central",
+            "ubicacion":"Av. Principal 123",
+            "horario":"Lunes a Viernes, 8:00 AM - 6:00 PM",
+            "telefono":"(01) 1234-5678",
+            "urlImagen":"https://media.istockphoto.com/id/183796231/es/foto/edificio-de-oficinas.jpg?s=612x612&w=0&k=20&c=pkbNDiGrkAUendEredECkCOudA4qE1wCTi7A_LVfSl8="
+        },
+        {
+            "id":2,
+            "nombre":"Sede Norte",
+            "ubicacion":"Calle Norte 456",
+            "horario":"Lunes a Viernes, 9:00 AM - 5:00 PM",
+            "telefono":"(01) 2345-6789",
+            "urlImagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mOjJQAFH5leafnItmbxiaofgZLlRz7g7SQ&s"
+        },
+        {
+            "id":3,
+            "nombre":"Sede Sur",
+            "ubicacion":"Av. Sur 789",
+            "horario":"Lunes a Sábado, 7:00 AM - 4:00 PM",
+            "telefono":"(01) 3456-7890",
+            "urlImagen":"https://i.pinimg.com/474x/1d/5c/92/1d5c92932fec6c37f31081d15878da35.jpg"
+        },
+        {
+            "id":4,
+            "nombre":"Sede Este",
+            "ubicacion":"Calle Este 321",
+            "horario":"Lunes a Viernes, 8:00 AM - 3:00 PM",
+            "telefono":"(01) 4567-8901",
+            "urlImagen":"https://i.pinimg.com/originals/4e/44/7e/4e447e6e1b685f4acd38cafc107ba70a.jpg"
+        }
+    ]
+}
