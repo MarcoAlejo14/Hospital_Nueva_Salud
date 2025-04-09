@@ -1,11 +1,60 @@
 {
     "especialidades": [
-        {
-            "id": 1,
-            "nombre": "Oncología",
-            "urlImagen": ""
-        }
-    ],
+    {
+      "id": 1,
+      "nombre": "Oncología",
+      "descripcion": "La oncología es la especialidad médica encargada del diagnóstico y tratamiento del cáncer, incluyendo terapias como la quimioterapia, radioterapia y cirugía.",
+      "urlImagen": "https://th.bing.com/th/id/OIP.UgM6-PmgySH45k6XstRt1gHaEl?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 2,
+      "nombre": "Odontología",
+      "descripcion": "La odontología se encarga del estudio, diagnóstico, prevención y tratamiento de enfermedades que afectan los dientes, encías y boca.",
+      "urlImagen": "https://uwiener.edu.pe/novedades/wp-content/uploads/2022/08/Atencion-dental-4-80.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Psicología",
+      "descripcion": "La psicología estudia el comportamiento humano y los procesos mentales, ofreciendo terapia y apoyo para mejorar la salud emocional y mental.",
+      "urlImagen": "https://uneg.edu.mx/wp-content/uploads/2022/12/Proyecto-nuevo-94-min.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Cardiología",
+      "descripcion": "La cardiología es la especialidad médica dedicada al estudio, diagnóstico y tratamiento de las enfermedades del corazón y el sistema circulatorio.",
+      "urlImagen": "https://cardiologiadeportiva.com/wp-content/uploads/2021/08/Cardiologia.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Traumatología",
+      "descripcion": "La traumatología se enfoca en la prevención, diagnóstico y tratamiento de lesiones óseas, musculares y articulares causadas por traumatismos o enfermedades.",
+      "urlImagen": "https://th.bing.com/th/id/R.6f97a118a62e218861de7bb152209813?rik=qGu41vELJ1PhMQ&pid=ImgRaw&r=0"
+    },
+    {
+      "id": 6,
+      "nombre": "Neonatología",
+      "descripcion": "La neonatología es una subespecialidad de la pediatría que se dedica al cuidado de los recién nacidos, especialmente los prematuros o con complicaciones médicas.",
+      "urlImagen": "https://blog.diversitynursing.com/hubfs/Getty%20Images/GettyImages-1414996755.jpg#keepProtocol"
+    },
+    {
+      "id": 7,
+      "nombre": "Neurología",
+      "descripcion": "La neurología es la rama de la medicina que estudia y trata los trastornos del sistema nervioso, incluyendo el cerebro, médula espinal y nervios.",
+      "urlImagen": "https://web.sisol.gob.pe/wp-content/uploads/2023/04/10-NEUROLOGIA.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "Cirugía Plástica",
+      "descripcion": "La cirugía plástica se especializa en la corrección y reconstrucción de partes del cuerpo, ya sea por motivos estéticos o por necesidad médica.",
+      "urlImagen": "https://th.bing.com/th/id/OIP.wjqrOmgXZ8IVv8A1Td-fdwHaE8?w=960&h=640&rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 9,
+      "nombre": "Radiología",
+      "descripcion": "La radiología es una especialidad médica que usa imágenes para diagnosticar enfermedades.",
+      "urlImagen": "https://blog.prozeducacao.com.br/wp-content/uploads/2022/11/post_thumbnail-1ae1e008f53b01672dc649c8a2d30d16.jpeg"
+    }
+  ],
     "medicos": [
         {
             "id": 1,
