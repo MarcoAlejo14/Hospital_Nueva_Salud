@@ -66,13 +66,12 @@
             descripcion.textContent = especialidad.descripcion;
 
             const botonInfo = document.createElement('a');
-            botonInfo.setAttribute('href', '/pages/medicos/');
+            botonInfo.setAttribute('href', `/pages/medicos/?idEspecialidad=${especialidad.id}`);
 
             const boton = document.createElement('button');
-            boton.textContent = 'Agendar cita';
+            boton.textContent = 'Elegir Doctor';
 
             botonInfo.appendChild(boton);
-
 
             especialidadCard.appendChild(titulo);
             especialidadCard.appendChild(imageContainer);
