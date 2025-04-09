@@ -56,121 +56,150 @@
     }
   ],
     "medicos": [
-      {
-        "id": 1,
-        "nombre": "Dr. Edson Gutierrez",
-        "especialidad": "Odontología",
-        "horario": "Lunes a Viernes, 8:00 AM - 4:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/a144f472-5ed8-4a81-9037-b2d67dc424a5/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
-      },
-      {
-        "id": 2,
-        "nombre": "Dra. Marcia Zelada",
-        "especialidad": "Neonatología",
-        "horario": "Lunes a Viernes, 9:00 AM - 5:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/90d192a7-f1af-41e8-82cb-5566ca33d308/Leonardo_Vision_XL_una_imagen_de_perfil_de_un_doctor_de_3040_a_1.jpg?w=512"
-      },
-      {
-        "id": 3,
-        "nombre": "Dr. Renzo Ramos",
-        "especialidad": "Neurología",
-        "horario": "Martes y Jueves, 10:00 AM - 6:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/49a43edd-7dfc-40d9-a8b0-4f28ffb20a87/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
-      },
-      {
-        "id": 4,
-        "nombre": "Dra. Manuela Camino",
-        "especialidad": "Oncología",
-        "horario": "Lunes a Viernes, 8:00 AM - 2:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/a6e7d68b-60c9-4ba4-9b12-dada77865f68/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
-      },
-      {
-        "id": 5,
-        "nombre": "Dr. Fernando Gómez",
-        "especialidad": "Radiología",
-        "horario": "Miércoles y Viernes, 10:00 AM - 4:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/281430ed-50a9-4d36-9c67-49e8ed2aaf38/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_1.jpg?w=512"
-      },
-      {
-        "id": 6,
-        "nombre": "Dra. Isabel Ríos",
-        "especialidad": "Cardiología",
-        "horario": "Lunes a Jueves, 9:00 AM - 3:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/9e69b151-b0e1-4ae7-b3c2-04bbe0bc62e4/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
-      },
-      {
-        "id": 7,
-        "nombre": "Dr. Ricardo Mendoza",
-        "especialidad": "Traumatología",
-        "horario": "Martes y Jueves, 8:00 AM - 5:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/7026a4d0-d402-4e7c-8773-4a6a3fbbe97d/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
-      },
-      {
-        "id": 8,
-        "nombre": "Dra. Laura Fernández",
-        "especialidad": "Psicología",
-        "horario": "Lunes a Sábado, 10:00 AM - 6:00 PM",
-        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/1aa7a7a3-0103-476d-84a0-2c38a9b41e5d/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
-      },
-      {
-        "id": 9,
-        "nombre": "Dra. Camila Ortega",
-        "especialidad": "Odontología",
-        "horario": "Martes a Sábado, 9:00 AM - 3:00 PM",
-        "foto": "https://www.freepik.es/fotos-premium/retrato-doctora-bata-blanca-estetoscopio-consultorio-hospital-generado-ia_59969951.htm"
-      },
-      {
-        "id": 10,
-        "nombre": "Dr. Javier León",
-        "especialidad": "Neonatología",
-        "horario": "Lunes a Viernes, 12:00 PM - 6:00 PM",
-        "foto": "https://www.freepik.es/imagen-ia-premium/doctor-compasivo-al-frente-equipo-medico-escena-retrato-ia-generativa_40299957.htm"
-      },
-      {
-        "id": 11,
-        "nombre": "Dra. Cecilia Montalvo",
-        "especialidad": "Neurología",
-        "horario": "Miércoles y Viernes, 8:00 AM - 1:00 PM",
-        "foto": "https://www.freepik.es/fotos-premium/retrato-doctora-bata-blanca-estetoscopio-consultorio-hospital-generado-ia_59970124.htm"
-      },
-      {
-        "id": 12,
-        "nombre": "Dr. Alberto Díaz",
-        "especialidad": "Oncología",
-        "horario": "Lunes a Miércoles, 10:00 AM - 4:00 PM",
-        "foto": "https://www.freepik.es/vector-premium/retrato-doctora-profesional-doctora-confiada_292661687.htm"
-      },
-      {
-        "id": 13,
-        "nombre": "Dra. Paola Guzmán",
-        "especialidad": "Radiología",
-        "horario": "Martes y Jueves, 1:00 PM - 5:00 PM",
-        "foto": "https://www.freepik.es/fotos-premium/pintura-digital-dibujo-retrato-generado-ia_73909398.htm"
-      },
-      {
-        "id": 14,
-        "nombre": "Dr. Hernán Tapia",
-        "especialidad": "Cardiología",
-        "horario": "Viernes y Sábado, 10:00 AM - 4:00 PM",
-        "foto": "https://www.freepik.es/fotos-premium/retrato-generado-ai_75586991.htm"
-      },
-      {
-        "id": 15,
-        "nombre": "Dra. Luisa Montenegro",
-        "especialidad": "Traumatología",
-        "horario": "Lunes a Viernes, 7:00 AM - 1:00 PM",
-        "foto": "https://www.freepik.es/fotos-premium/retrato-modelo-generado-ia_58854100.htm"
-      },
-      {
-        "id": 16,
-        "nombre": "Dr. Martín Robles",
-        "especialidad": "Psicología",
-        "horario": "Lunes a Jueves, 2:00 PM - 8:00 PM",
-        "foto": "https://www.freepik.es/fotos-premium/retrato-personaje-albert-einstein-generado-ia_68202363.htm"
-      }
-      
-    
-    ],
+  {
+    "id": 1,
+    "nombre": "Dr. Edson Gutierrez",
+    "especialidad": "Odontología",
+    "idEspecialidad": 2,
+    "horario": "Lunes a Viernes, 8:00 AM - 4:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/a144f472-5ed8-4a81-9037-b2d67dc424a5/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
+  },
+  {
+    "id": 2,
+    "nombre": "Dra. Marcia Zelada",
+    "especialidad": "Neonatología",
+    "idEspecialidad": 6,
+    "horario": "Lunes a Viernes, 9:00 AM - 5:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/90d192a7-f1af-41e8-82cb-5566ca33d308/Leonardo_Vision_XL_una_imagen_de_perfil_de_un_doctor_de_3040_a_1.jpg?w=512"
+  },
+  {
+    "id": 3,
+    "nombre": "Dr. Renzo Ramos",
+    "especialidad": "Neurología",
+    "idEspecialidad": 7,
+    "horario": "Martes y Jueves, 10:00 AM - 6:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/49a43edd-7dfc-40d9-a8b0-4f28ffb20a87/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
+  },
+  {
+    "id": 4,
+    "nombre": "Dra. Manuela Camino",
+    "especialidad": "Oncología",
+    "idEspecialidad": 1,
+    "horario": "Lunes a Viernes, 8:00 AM - 2:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/a6e7d68b-60c9-4ba4-9b12-dada77865f68/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
+  },
+  {
+    "id": 5,
+    "nombre": "Dr. Fernando Gómez",
+    "especialidad": "Radiología",
+    "idEspecialidad": 9,
+    "horario": "Miércoles y Viernes, 10:00 AM - 4:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/281430ed-50a9-4d36-9c67-49e8ed2aaf38/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_1.jpg?w=512"
+  },
+  {
+    "id": 6,
+    "nombre": "Dra. Isabel Ríos",
+    "especialidad": "Cardiología",
+    "idEspecialidad": 4,
+    "horario": "Lunes a Jueves, 9:00 AM - 3:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/9e69b151-b0e1-4ae7-b3c2-04bbe0bc62e4/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
+  },
+  {
+    "id": 7,
+    "nombre": "Dr. Ricardo Mendoza",
+    "especialidad": "Traumatología",
+    "idEspecialidad": 5,
+    "horario": "Martes y Jueves, 8:00 AM - 5:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/7026a4d0-d402-4e7c-8773-4a6a3fbbe97d/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
+  },
+  {
+    "id": 8,
+    "nombre": "Dra. Laura Fernández",
+    "especialidad": "Psicología",
+    "idEspecialidad": 3,
+    "horario": "Lunes a Sábado, 10:00 AM - 6:00 PM",
+    "urlImagen": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/1aa7a7a3-0103-476d-84a0-2c38a9b41e5d/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
+  },
+  {
+    "id": 9,
+    "nombre": "Dra. Camila Ortega",
+    "especialidad": "Odontología",
+    "idEspecialidad": 2,
+    "horario": "Martes a Sábado, 9:00 AM - 3:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/R.2b28df89bfc60571f68b36a6987c989c?rik=G%2f0c4vjv9PlQpQ&riu=http%3a%2f%2fwww.centmed.us%2fwp-content%2fuploads%2f2017%2f02%2fMedical-Clinic-Chicago-Service.jpg&ehk=1PjiyD32nBaizeSmCSA%2bQwrjdcth8ofCYgmgDtF4Y3c%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    "id": 10,
+    "nombre": "Dr. Javier León",
+    "especialidad": "Neonatología",
+    "idEspecialidad": 6,
+    "horario": "Lunes a Viernes, 12:00 PM - 6:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.TyacMdkJZmaA3p9btptQ8wHaIA?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 11,
+    "nombre": "Dra. Cecilia Montalvo",
+    "especialidad": "Neurología",
+    "idEspecialidad": 7,
+    "horario": "Miércoles y Viernes, 8:00 AM - 1:00 PM",
+    "urlImagen": "https://hospitalmanagementsystem.org/images/best-hospital-management-system.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Dr. Alberto Díaz",
+    "especialidad": "Oncología",
+    "idEspecialidad": 1,
+    "horario": "Lunes a Miércoles, 10:00 AM - 4:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.808Tgh8NIXYAAKjrZ5DbmQHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 13,
+    "nombre": "Dra. Paola Guzmán",
+    "especialidad": "Radiología",
+    "idEspecialidad": 9,
+    "horario": "Martes y Jueves, 1:00 PM - 5:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.60N-XGGWiwgHr_ZjsTbo6AHaF6?w=670&h=535&rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 14,
+    "nombre": "Dr. Hernán Tapia",
+    "especialidad": "Cardiología",
+    "idEspecialidad": 4,
+    "horario": "Viernes y Sábado, 10:00 AM - 4:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.pM8i-bWCNS2T76KqsStl8AHaIF?w=767&h=838&rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 15,
+    "nombre": "Dra. Luisa Montenegro",
+    "especialidad": "Traumatología",
+    "idEspecialidad": 5,
+    "horario": "Lunes a Viernes, 7:00 AM - 1:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.FEoEcCv0R3xe_1E-FZEeLAHaGc?w=1150&h=1000&rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 16,
+    "nombre": "Dr. Martín Robles",
+    "especialidad": "Psicología",
+    "idEspecialidad": 3,
+    "horario": "Lunes a Jueves, 2:00 PM - 8:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.5wWUkPmpD4HFuQ7yrep6IgHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 17,
+    "nombre": "Dr. Dereck Shepard",
+    "especialidad": "Cirugía Plástica",
+    "idEspecialidad": 8,
+    "horario": "Lunes a Jueves, 2:00 PM - 8:00 PM",
+    "urlImagen": "https://lirp.cdn-website.com/600b5b6e/dms3rep/multi/opt/juan-carlos-maldonado-director-medico-27637a5f-1920w.JPG"
+  },  {
+    "id": 18,
+    "nombre": "Dr. Mark Sloan",
+    "especialidad": "Cirugía Plástica",
+    "idEspecialidad": 8,
+    "horario": "Lunes a Jueves, 2:00 PM - 8:00 PM",
+    "urlImagen": "https://th.bing.com/th/id/OIP.Vvc4asT_Mza-lBMDxhTaEQHaHa?w=1304&h=1304&rs=1&pid=ImgDetMain"
+  }
+],
     "sedes":[
         {
             "id":1,

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/pages/medicos/medicos.css">
     <link rel="stylesheet" href="/main.css">
 </head>
+
 <body>
     <header>
         <img src="/assets/images/logo_nueva_salud.webp" width="50px" alt="Logo Nueva Salud">
@@ -20,109 +22,64 @@
         </nav>
     </header>
     <div class="header">Staff Médico</div>
-    <main id="lista-medicos" class="lista-medicos"></main>
-    <!--main>
-        <div class="doctor">
-            <img src="/assets/images/doctor1.jpg" alt="Doctor 1">
-            <p class="nombre-dr">Dr. Edson Gutierrez</p>
-            <p>Especialidad: Odontología</p>
-            <p>Horario: Lunes a Viernes, 8:00 AM - 4:00 PM</p>
-        </div>
+    <main id="medicos-container">
+    </main>
 
-        <div class="doctor">
-            <img src="/assets/images/doctor2.jpg" alt="Doctor 2">
-            <p class="nombre-dr">Dra. Marcia Zelada</p>
-            <p>Especialidad: Neonatología</p>
-            <p>Horario: Lunes a Viernes, 9:00 AM - 5:00 PM</p>
-        </div>
 
-        <div class="doctor">
-            <img src="/assets/images/doctor3.jpg" alt="Doctor 3">
-            <p class="nombre-dr">Dr. Renzo Ramos</p>
-            <p>Especialidad: Neurología</p>
-            <p>Horario: Martes y Jueves, 10:00 AM - 6:00 PM</p>
-        </div>
-
-        <div class="doctor">
-            <img src="/assets/images/doctor4.jpg" alt="Doctor 4">
-            <p class="nombre-dr">Dra. Manuela Camino</p>
-            <p>Especialidad: Oncología</p>
-            <p>Horario: Lunes a Viernes, 8:00 AM - 2:00 PM</p>
-        </div>
-
-        <div class="doctor">
-            <img src="/assets/images/doctor5.jpg" alt="Doctor 5">
-            <p class="nombre-dr">Dr. Fernando Gómez</p>
-            <p>Especialidad: Radiología</p>
-            <p>Horario: Miércoles y Viernes, 10:00 AM - 4:00 PM</p>
-        </div>
-
-        <div class="doctor">
-            <img src="/assets/images/doctor6.jpg" alt="Doctor 6">
-            <p class="nombre-dr">Dra. Isabel Ríos</p>
-            <p>Especialidad: Cardiología</p>
-            <p>Horario: Lunes a Jueves, 9:00 AM - 3:00 PM</p>
-        </div>
-
-        <div class="doctor">
-            <img src="/assets/images/doctor7.jpg" alt="Doctor 7">
-            <p class="nombre-dr">Dr. Ricardo Mendoza</p>
-            <p>Especialidad: Traumatología </p>
-            <p>Horario: Martes y Jueves, 8:00 AM - 5:00 PM</p>
-        </div>
-
-        <div class="doctor">
-            <img src="/assets/images/doctor8.jpg" alt="Doctor 8">
-            <p class="nombre-dr">Dra. Laura Fernández</p>
-            <p>Especialidad: Psicología</p>
-            <p>Horario: Lunes a Sábado, 10:00 AM - 6:00 PM</p>
-        </div>
-    </main-->
 </body>
-
-
 <script>
-    const contenedorMedicos = document.getElementById('lista-medicos');
-  
-    async function cargarMedicos() {
-      try {
-        const respuesta = await fetch('http://localhost:3000/medicos');
-        const data = await respuesta.json();
-  
-        for (let i = 0; i < data.length; i++) {
-          const medico = data[i];
-  
-          const doctorCard = document.createElement('div');
-          doctorCard.className = 'doctor';
-  
-          const imagen = document.createElement('img');
-          imagen.src = medico.foto;
-          imagen.alt = `Foto de ${medico.nombre}`;
-  
-          const nombre = document.createElement('p');
-          nombre.className = 'nombre-dr';
-          nombre.textContent = medico.nombre;
-  
-          const especialidad = document.createElement('p');
-          especialidad.textContent = `Especialidad: ${medico.especialidad}`;
-  
-          const horario = document.createElement('p');
-          horario.textContent = `Horario: ${medico.horario}`;
-  
-          doctorCard.appendChild(imagen);
-          doctorCard.appendChild(nombre);
-          doctorCard.appendChild(especialidad);
-          doctorCard.appendChild(horario);
-  
-          contenedorMedicos.appendChild(doctorCard);
-        }
-  
-      } catch (error) {
-        console.error('Error al cargar médicos:', error);
-      }
-    }
-  
-    cargarMedicos();
-  </script>
+    const medicosContainer = document.getElementById('medicos-container');
 
+    async function cargarMedicos() {
+        console.log('He iniciado con el proceso de la función cargarMedicos');
+
+        const queryString = window.location.search;
+        console.log('queryString', queryString);
+
+        const params = new URLSearchParams(queryString);
+        const idEspecialidad = params.get('idEspecialidad');
+
+        console.log('idEspecialidad', idEspecialidad);
+        let url = 'http://localhost:3000/medicos';
+
+        if (idEspecialidad) {
+            url = `http://localhost:3000/medicos?idEspecialidad=${idEspecialidad}`;
+        }
+
+        const result = await fetch(url);
+        const data = await result.json();
+        console.log('data::', data);
+
+        for (let i = 0; i < data.length; i++) {
+            const medico = data[i];
+
+            const medicoCard = document.createElement('div');
+            medicoCard.setAttribute('class', 'doctor');
+
+            const img = document.createElement('img');
+            img.setAttribute('src', medico.urlImagen);
+            img.setAttribute('alt', medico.nombre);
+
+            const nombre = document.createElement('p');
+            nombre.setAttribute('class', 'nombre-dr');
+            nombre.textContent = medico.nombre;
+
+            const especialidad = document.createElement('p');
+            especialidad.textContent = `Especialidad: ${medico.especialidad}`;
+
+            const horario = document.createElement('p');
+            horario.textContent = `Horario: ${medico.horario}`;
+
+            medicoCard.appendChild(img);
+            medicoCard.appendChild(nombre);
+            medicoCard.appendChild(especialidad);
+            medicoCard.appendChild(horario);
+
+            medicosContainer.appendChild(medicoCard);
+        }
+    }
+
+    cargarMedicos();
+</script>
 </html>
+
