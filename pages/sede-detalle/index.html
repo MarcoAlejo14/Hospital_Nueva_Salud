@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes - Hospital Nueva Salud</title>
+    <link rel="stylesheet" href="/variables.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/pages/sede-detalle/sede-detalle.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/assets/images/logo_nueva_salud.webp" width="50px" alt="Logo Nueva Salud">
+        <!--<img src="/assets/images/logo_hospital_nueva_salud" width="50px" alt="">-->
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/pages/especialidades">Especialidades</a></li>
+                <li><a href="/pages/medicos/">Médicos</a></li>
+                <li><a href="/pages/sedes">Sedes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="header">Sedes del Hospital</div>
+    <main>
+        <div class="main-container">
+            <div id="id-sede-detalle-container" class="sede-detalle-container">
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+
+async function cargarSedeDetalle() {
+    const sedeDetalleContainer = document.getElementById('id-sede-detalle-container');
+    sedeDetalleContainer.innerHTML = "";
+    
+    const queryString = window.location.search;
+    const params = new URLSearchParams(queryString);
+    const idSede = params.get('idSede');
+    const result = await fetch(`http://localhost:3000/sedes?id=${idSede}`);
+    const data = await result.json();
+
+    const sede = data[0];
+    const sedeCard = document.createElement('div');
+    sedeCard.className = 'sede-detalle-container';
+
+    const img = document.createElement('img');
+    img.className = 'imagen-sede';
+    img.src = sede.urlImagen;
+    img.alt = sede.nombre;
+    sedeCard.appendChild(img);
+
+    const titulo = document.createElement('h1');
+    titulo.className = 'titulo-sede';
+    titulo.textContent = sede.nombre;
+    sedeCard.appendChild(titulo);
+
+    const ubicacion = document.createElement('p');
+    ubicacion.className = 'ubicacion-sede';
+    ubicacion.innerHTML = `<strong>Ubicación:</strong> ${sede.ubicacion}`;
+    sedeCard.appendChild(ubicacion);
+
+    if (sede.descripcion) {
+        const descripcion = document.createElement('p');
+        descripcion.className = 'descripcion-sede';
+        descripcion.textContent = sede.descripcion;
+        sedeCard.appendChild(descripcion);
+    }
+
+    if (sede.caracteristicas && sede.caracteristicas.length > 0) {
+        const caracteristicasTitle = document.createElement('h2');
+        caracteristicasTitle.textContent = 'Nuestras Instalaciones';
+        sedeCard.appendChild(caracteristicasTitle);
+
+        const caracteristicasList = document.createElement('ul');
+        caracteristicasList.className = 'caracteristicas-list';
+        
+        sede.caracteristicas.forEach(caracteristica => {
+            const item = document.createElement('li');
+            item.textContent = caracteristica;
+            caracteristicasList.appendChild(item);
+        });
+        
+        sedeCard.appendChild(caracteristicasList);
+    }
+
+    if (sede.servicios && sede.servicios.length > 0) {
+        const serviciosTitle = document.createElement('h2');
+        serviciosTitle.textContent = 'Servicios';
+        sedeCard.appendChild(serviciosTitle);
+
+        const serviciosList = document.createElement('ul');
+        serviciosList.className = 'servicios-list';
+        
+        sede.servicios.forEach(servicio => {
+            const item = document.createElement('li');
+            item.textContent = servicio;
+            serviciosList.appendChild(item);
+        });
+        
+        sedeCard.appendChild(serviciosList);
+    }
+
+    const contactoSection = document.createElement('div');
+    contactoSection.className = 'contacto-section';
+    
+    if (sede.horario) {
+        const horario = document.createElement('p');
+        horario.className = 'horario-sede';
+        horario.innerHTML = `<strong>Horario:</strong> ${sede.horario}`;
+        contactoSection.appendChild(horario);
+    }
+    
+    if (sede.telefono) {
+        const telefono = document.createElement('p');
+        telefono.className = 'telefono-sede';
+        telefono.innerHTML = `<strong>Teléfono:</strong> ${sede.telefono}`;
+        contactoSection.appendChild(telefono);
+    }
+    
+    sedeCard.appendChild(contactoSection);
+
+    const boton = document.createElement('button');
+    boton.className = 'volver-btn';
+    boton.textContent = 'Volver';
+    boton.addEventListener('click', function() {
+        window.location.href = '/pages/sedes';
+    });
+    sedeCard.appendChild(boton);
+
+    sedeDetalleContainer.appendChild(sedeCard);
+}
+
+cargarSedeDetalle();
+    </script>
+</html>

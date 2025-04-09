@@ -24,6 +24,12 @@
     </header>
     <div class="header">Sedes del Hospital</div>
     <main>
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar..." id="search" name="search">
+                <button class="search-button" onclick="cargarSedes()">Buscar</button>
+            </div>
+        </div>
         <div class="main-container">
             <div id="id-sedes-container" class="sedes-container">
             </div>
@@ -31,12 +37,19 @@
     </main>
 </body>
 <script>
-    const sedesContainer = document.getElementById('id-sedes-container');
-    console.log(sedesContainer);
-
+    
     async function cargarSedes(){
+        const sedesContainer = document.getElementById('id-sedes-container');
+        sedesContainer.innerHTML = "";
+        console.log(sedesContainer); 
+        const searchTerm = document.getElementById('search').value.trim();
+        console.log(searchTerm);
+        let queryParams='';
+        if(searchTerm!=""){
+            queryParams = `?nombre=${encodeURIComponent(searchTerm)}`;
+        }
         console.log('He iniciado con el proceso de la funcion cargarSedes')
-        const result = await fetch('http://localhost:3000/sedes');
+        const result = await fetch(`http://localhost:3000/sedes${queryParams}`);
         const data = await result.json();
         console.log('data::',data);
 
@@ -68,11 +81,20 @@
             telefono.setAttribute('class','telefono');
             telefono.textContent = 'Teléfono: '+sede.telefono;
             
+            const boton = document.createElement('button');
+            boton.className = 'conoce-mas-btn';
+            boton.textContent = 'Conoce más';
+            
+            boton.addEventListener('click', function() {
+                window.location.href = `/pages/sede-detalle/?idSede=${sede.id}`; // Para redireccionar
+            });
+
             sedeCard.appendChild(img);
             sedeCard.appendChild(titulo);
             sedeCard.appendChild(ubicacion);
             sedeCard.appendChild(horario);
             sedeCard.appendChild(telefono);
+            sedeCard.appendChild(boton);
 
             sedesContainer.appendChild(sedeCard);
         }

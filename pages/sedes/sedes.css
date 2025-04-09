@@ -42,20 +42,59 @@
     margin: 5px 0;
     color: #555;
 }
-/*
-.sede-central {
-    border-top: 10px solid #007bff;
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
 }
 
-.sede-norte {
-    border-top: 10px solid #28a745;
+.search-container {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-.sede-sur {
-    border-top: 10px solid #dc3545;
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
 }
 
-.sede-este {
-    border-top: 10px solid #ffc107;
-}*/
+.search-button {
+    padding: 10px 20px;
+    background-color: #0d3c75;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
 
+.search-button:hover {
+    background-color: #0056b3;
+}
+
+  .conoce-mas-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0d3c75;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+.conoce-mas-btn:hover {
+    background-color: #0056b3;
+}
