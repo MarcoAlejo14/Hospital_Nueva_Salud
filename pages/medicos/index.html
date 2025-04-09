@@ -20,7 +20,8 @@
         </nav>
     </header>
     <div class="header">Staff Médico</div>
-    <main>
+    <main id="lista-medicos" class="lista-medicos"></main>
+    <!--main>
         <div class="doctor">
             <img src="/assets/images/doctor1.jpg" alt="Doctor 1">
             <p class="nombre-dr">Dr. Edson Gutierrez</p>
@@ -76,6 +77,52 @@
             <p>Especialidad: Psicología</p>
             <p>Horario: Lunes a Sábado, 10:00 AM - 6:00 PM</p>
         </div>
-    </main>
+    </main-->
 </body>
+
+
+<script>
+    const contenedorMedicos = document.getElementById('lista-medicos');
+  
+    async function cargarMedicos() {
+      try {
+        const respuesta = await fetch('http://localhost:3000/medicos');
+        const data = await respuesta.json();
+  
+        for (let i = 0; i < data.length; i++) {
+          const medico = data[i];
+  
+          const doctorCard = document.createElement('div');
+          doctorCard.className = 'doctor';
+  
+          const imagen = document.createElement('img');
+          imagen.src = medico.foto;
+          imagen.alt = `Foto de ${medico.nombre}`;
+  
+          const nombre = document.createElement('p');
+          nombre.className = 'nombre-dr';
+          nombre.textContent = medico.nombre;
+  
+          const especialidad = document.createElement('p');
+          especialidad.textContent = `Especialidad: ${medico.especialidad}`;
+  
+          const horario = document.createElement('p');
+          horario.textContent = `Horario: ${medico.horario}`;
+  
+          doctorCard.appendChild(imagen);
+          doctorCard.appendChild(nombre);
+          doctorCard.appendChild(especialidad);
+          doctorCard.appendChild(horario);
+  
+          contenedorMedicos.appendChild(doctorCard);
+        }
+  
+      } catch (error) {
+        console.error('Error al cargar médicos:', error);
+      }
+    }
+  
+    cargarMedicos();
+  </script>
+
 </html>

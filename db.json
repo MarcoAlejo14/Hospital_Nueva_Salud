@@ -55,6 +55,7 @@
       "urlImagen": "https://blog.prozeducacao.com.br/wp-content/uploads/2022/11/post_thumbnail-1ae1e008f53b01672dc649c8a2d30d16.jpeg"
     }
   ],
+<<<<<<< HEAD
   "sedes": [
     {
       "id": 1,
@@ -141,4 +142,209 @@
       ]
     }
   ]
+=======
+    "medicos": [
+      {
+        "id": 1,
+        "nombre": "Dr. Edson Gutierrez",
+        "especialidad": "Odontología",
+        "horario": "Lunes a Viernes, 8:00 AM - 4:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/a144f472-5ed8-4a81-9037-b2d67dc424a5/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
+      },
+      {
+        "id": 2,
+        "nombre": "Dra. Marcia Zelada",
+        "especialidad": "Neonatología",
+        "horario": "Lunes a Viernes, 9:00 AM - 5:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/90d192a7-f1af-41e8-82cb-5566ca33d308/Leonardo_Vision_XL_una_imagen_de_perfil_de_un_doctor_de_3040_a_1.jpg?w=512"
+      },
+      {
+        "id": 3,
+        "nombre": "Dr. Renzo Ramos",
+        "especialidad": "Neurología",
+        "horario": "Martes y Jueves, 10:00 AM - 6:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/49a43edd-7dfc-40d9-a8b0-4f28ffb20a87/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
+      },
+      {
+        "id": 4,
+        "nombre": "Dra. Manuela Camino",
+        "especialidad": "Oncología",
+        "horario": "Lunes a Viernes, 8:00 AM - 2:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/a6e7d68b-60c9-4ba4-9b12-dada77865f68/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
+      },
+      {
+        "id": 5,
+        "nombre": "Dr. Fernando Gómez",
+        "especialidad": "Radiología",
+        "horario": "Miércoles y Viernes, 10:00 AM - 4:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/281430ed-50a9-4d36-9c67-49e8ed2aaf38/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_1.jpg?w=512"
+      },
+      {
+        "id": 6,
+        "nombre": "Dra. Isabel Ríos",
+        "especialidad": "Cardiología",
+        "horario": "Lunes a Jueves, 9:00 AM - 3:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/9e69b151-b0e1-4ae7-b3c2-04bbe0bc62e4/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
+      },
+      {
+        "id": 7,
+        "nombre": "Dr. Ricardo Mendoza",
+        "especialidad": "Traumatología",
+        "horario": "Martes y Jueves, 8:00 AM - 5:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/7026a4d0-d402-4e7c-8773-4a6a3fbbe97d/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_0.jpg?w=512"
+      },
+      {
+        "id": 8,
+        "nombre": "Dra. Laura Fernández",
+        "especialidad": "Psicología",
+        "horario": "Lunes a Sábado, 10:00 AM - 6:00 PM",
+        "foto": "https://cdn.leonardo.ai/users/9d1ab5a3-524c-40bd-9740-11ac0b7154a7/generations/1aa7a7a3-0103-476d-84a0-2c38a9b41e5d/Leonardo_Vision_XL_The_image_is_a_professional_portrait_photog_2.jpg?w=512"
+      },
+      {
+        "id": 9,
+        "nombre": "Dra. Camila Ortega",
+        "especialidad": "Odontología",
+        "horario": "Martes a Sábado, 9:00 AM - 3:00 PM",
+        "foto": "https://www.freepik.es/fotos-premium/retrato-doctora-bata-blanca-estetoscopio-consultorio-hospital-generado-ia_59969951.htm"
+      },
+      {
+        "id": 10,
+        "nombre": "Dr. Javier León",
+        "especialidad": "Neonatología",
+        "horario": "Lunes a Viernes, 12:00 PM - 6:00 PM",
+        "foto": "https://www.freepik.es/imagen-ia-premium/doctor-compasivo-al-frente-equipo-medico-escena-retrato-ia-generativa_40299957.htm"
+      },
+      {
+        "id": 11,
+        "nombre": "Dra. Cecilia Montalvo",
+        "especialidad": "Neurología",
+        "horario": "Miércoles y Viernes, 8:00 AM - 1:00 PM",
+        "foto": "https://www.freepik.es/fotos-premium/retrato-doctora-bata-blanca-estetoscopio-consultorio-hospital-generado-ia_59970124.htm"
+      },
+      {
+        "id": 12,
+        "nombre": "Dr. Alberto Díaz",
+        "especialidad": "Oncología",
+        "horario": "Lunes a Miércoles, 10:00 AM - 4:00 PM",
+        "foto": "https://www.freepik.es/vector-premium/retrato-doctora-profesional-doctora-confiada_292661687.htm"
+      },
+      {
+        "id": 13,
+        "nombre": "Dra. Paola Guzmán",
+        "especialidad": "Radiología",
+        "horario": "Martes y Jueves, 1:00 PM - 5:00 PM",
+        "foto": "https://www.freepik.es/fotos-premium/pintura-digital-dibujo-retrato-generado-ia_73909398.htm"
+      },
+      {
+        "id": 14,
+        "nombre": "Dr. Hernán Tapia",
+        "especialidad": "Cardiología",
+        "horario": "Viernes y Sábado, 10:00 AM - 4:00 PM",
+        "foto": "https://www.freepik.es/fotos-premium/retrato-generado-ai_75586991.htm"
+      },
+      {
+        "id": 15,
+        "nombre": "Dra. Luisa Montenegro",
+        "especialidad": "Traumatología",
+        "horario": "Lunes a Viernes, 7:00 AM - 1:00 PM",
+        "foto": "https://www.freepik.es/fotos-premium/retrato-modelo-generado-ia_58854100.htm"
+      },
+      {
+        "id": 16,
+        "nombre": "Dr. Martín Robles",
+        "especialidad": "Psicología",
+        "horario": "Lunes a Jueves, 2:00 PM - 8:00 PM",
+        "foto": "https://www.freepik.es/fotos-premium/retrato-personaje-albert-einstein-generado-ia_68202363.htm"
+      }
+      
+    
+    ],
+    "sedes":[
+        {
+            "id":1,
+            "nombre":"Sede Central",
+            "ubicacion":"Av. Principal 123",
+            "horario":"Lunes a Viernes, 8:00 AM - 6:00 PM",
+            "telefono":"(01) 1234-5678",
+            "urlImagen":"https://media.istockphoto.com/id/183796231/es/foto/edificio-de-oficinas.jpg?s=612x612&w=0&k=20&c=pkbNDiGrkAUendEredECkCOudA4qE1wCTi7A_LVfSl8=",
+            "descripcion": "Nueva Salud Sede Central pone a tu disposición más de 30 especialidades y un equipo de médicos y enfermeras de gran prestigio y experiencia. Contamos con modernas instalaciones equipos de última generación, laboratorio y área de imágenes propios.",
+            "caracteristicas": [
+                "Modernas camas eléctricas con colchón de aire y paneles",
+                "Cortinas de alta tecnología que evitan la propagación de bacterias",
+                "Equipos de última generación que agilizan el diagnóstico en emergencia"
+              ],
+              "servicios": [
+                "Emergencia 24 horas",
+                "Consulta ambulatoria en más de 20 especialidades",
+                "Laboratorio clínico",
+                "Servicio de imágenes (Ecografía, Electrocardiograma, Radiografía)",
+                "Habitaciones privadas modernas y cómodas"
+              ]
+        },
+        {
+            "id":2,
+            "nombre":"Sede Norte",
+            "ubicacion":"Calle Norte 456",
+            "horario":"Lunes a Viernes, 9:00 AM - 5:00 PM",
+            "telefono":"(01) 2345-6789",
+            "urlImagen":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5mOjJQAFH5leafnItmbxiaofgZLlRz7g7SQ&s",
+            "descripcion": "Clínica de especialidades médicas con más de 15 años de experiencia brindando atención de calidad con tecnología de punta y profesionales altamente capacitados.",
+            "caracteristicas": [
+              "Quirófanos inteligentes con tecnología digital",
+              "Sistema de historia clínica electrónica",
+              "Amplias zonas de espera con comodidades"
+            ],
+            "servicios": [
+              "Cirugías ambulatorias",
+              "Chequeos preventivos",
+              "Medicina física y rehabilitación",
+              "Unidad de cuidados intensivos",
+              "Farmacia las 24 horas"
+            ]
+            
+        },
+        {
+            "id":3,
+            "nombre":"Sede Sur",
+            "ubicacion":"Av. Sur 789",
+            "horario":"Lunes a Sábado, 7:00 AM - 4:00 PM",
+            "telefono":"(01) 3456-7890",
+            "urlImagen":"https://i.pinimg.com/474x/1d/5c/92/1d5c92932fec6c37f31081d15878da35.jpg",
+            "descripcion": "Pioneros en medicina preventiva con un enfoque humano y personalizado. Contamos con certificación internacional de calidad.",
+            "caracteristicas": [
+                "Primer piso exclusivo para chequeos preventivos",
+                "Sala de espera VIP para pacientes preferenciales",
+                "Sistema de citas por app móvil"
+              ],
+              "servicios": [
+                "Chequeos ejecutivos",
+                "Medicina ocupacional",
+                "Centro de vacunación internacional",
+                "Banco de sangre",
+                "Servicio de ambulancia privada"
+              ]
+        },
+        {
+            "id":4,
+            "nombre":"Sede Este",
+            "ubicacion":"Calle Este 321",
+            "horario":"Lunes a Viernes, 8:00 AM - 3:00 PM",
+            "telefono":"(01) 4567-8901",
+            "urlImagen":"https://i.pinimg.com/originals/4e/44/7e/4e447e6e1b685f4acd38cafc107ba70a.jpg",
+            "descripcion": "Especializados en atención materno-infantil con áreas diseñadas especialmente para la comodidad de madres y recién nacidos.",
+            "caracteristicas": [
+                "Sala de partos con ambiente cálido",
+                "Unidad neonatal de última generación",
+                "Área de recuperación posparto con suites privadas"
+              ],
+              "servicios": [
+                "Control prenatal integral",
+                "Parto humanizado",
+                "Pediatría las 24 horas",
+                "Lactario equipado",
+                "Escuela para padres"
+              ]
+        }
+    ]
+>>>>>>> 608613eed206be1801350b8c77ba0760d85a6957
 }
